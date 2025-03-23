@@ -1,4 +1,5 @@
-# ỨNG DỤNG CÔNG NGHỆ TRONG HỆ THỐNG QUẢN LÝ VÀ ĐIỂM DANH SINH VIÊN
+<h1 align="center">ỨNG DỤNG CÔNG NGHỆ TRONG HỆ THỐNG QUẢN LÝ VÀ ĐIỂM DANH SINH VIÊN</h1>
+
 
 ![DaiNam University Logo](https://dainam.edu.vn/wp-content/uploads/2020/01/logo-dainam.png)
 ![AIoTLab Logo](https://www.aiotlab.vn/wp-content/uploads/2020/01/logo-aiotlab.png)
