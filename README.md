@@ -1,8 +1,8 @@
 <h1 align="center">ỨNG DỤNG CÔNG NGHỆ TRONG HỆ THỐNG QUẢN LÝ VÀ ĐIỂM DANH SINH VIÊN</h1>
 <div align="center">
+![Logo](images/logoDaiNam.png)
+![Logo](images/LogoAIoTLab.png)
 
-<img src="https://dainam.edu.vn/wp-content/uploads/2020/01/logo-dainam.png" alt="DaiNam University Logo" width="200"/>
-<img src="https://www.aiotlab.vn/wp-content/uploads/2020/01/logo-aiotlab.png" alt="AIoTLab Logo" width="200"/>
 
 <br>
 
