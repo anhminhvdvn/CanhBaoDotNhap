@@ -27,7 +27,10 @@ def nhandien():
         conn.close()
         return profile
 
-    cap = cv2.VideoCapture(0)
+    # Địa chỉ IP Camera
+    camera_url = "http://192.168.0.3:8080/video"
+    cap = cv2.VideoCapture(camera_url)
+    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*"MJPG"))
     font = cv2.FONT_HERSHEY_COMPLEX
     last_hello_time = 0
     last_alert_time = 0
@@ -56,7 +59,9 @@ def nhandien():
                     cv2.imwrite(f"intruder/intruder_{len(os.listdir('intruder')) + 1}.jpg", img[y:y + h, x:x + w])
                     last_alert_time = time.time()
 
-        cv2.imshow('img', img)
+        small_img = cv2.resize(img, (img.shape[1] // 2, img.shape[0] // 2))  # Giảm 1/4 kích thước
+        cv2.imshow('img', small_img)
+
         if cv2.waitKey(1) == ord('q'):
             break
     cap.release()
@@ -106,7 +111,10 @@ def laydulieu():
         conn.close()
 
     face_cascade = cv2.CascadeClassifier('khuonMat.xml')
-    cap = cv2.VideoCapture(0)
+    # Địa chỉ IP Camera
+    camera_url = "http://192.168.0.3:8080/video"
+    cap = cv2.VideoCapture(camera_url)
+    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*"MJPG"))
     id = int1.get()
     name = str1.get()
     insertOrUpdate(id, name)
@@ -121,7 +129,8 @@ def laydulieu():
                 os.makedirs('data_face')
             cv2.imwrite(f'data_face/User.{id}.{sample_number}.jpg', img[y:y + h, x:x + w])
             cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
-        cv2.imshow('img', img)
+        small_img = cv2.resize(img, (img.shape[1] // 2, img.shape[0] // 2)) 
+        cv2.imshow('img', small_img)
         cv2.waitKey(1)
         if sample_number > 100:
             cap.release()
