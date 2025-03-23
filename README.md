@@ -1,7 +1,7 @@
 <h1 align="center">ỨNG DỤNG CÔNG NGHỆ TRONG HỆ THỐNG QUẢN LÝ VÀ ĐIỂM DANH SINH VIÊN</h1>
 <div align="center">
-![Logo](images/logoDaiNam.png)
-![Logo](images/LogoAIoTLab.png)
+![Tên ảnh](https://raw.githubusercontent.com/anhminhvdvn/CanhBaoDotNhap/main/images/LogoAIoTLab.png)
+![Tên ảnh](https://raw.githubusercontent.com/anhminhvdvn/CanhBaoDotNhap/main/images/logoDaiNam.png) 
 
 
 <br>
