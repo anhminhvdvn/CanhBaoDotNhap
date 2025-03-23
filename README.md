@@ -62,9 +62,9 @@ BTL_IOT
 ├── 📄 nhan_dien.py         # File code nhận diện  
 ├── 📄 training.py          # File code training  
 
- 
-<h3 align="center">🛠️ CÔNG NGHỆ SỬ DỤNG</h1>
-### 📡 Phần cứng
+ ### 🛠️ CÔNG NGHỆ SỬ DỤNG
+<h3 align="center">📡 Phần cứng</h1>
+
 
 <div align="center"> 
 <br>
