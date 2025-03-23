@@ -69,9 +69,19 @@ BTL_IOT
 
 ### Phần cứng
 
+<div align="center">
+
+<img src="https://dainam.edu.vn/wp-content/uploads/2020/01/logo-dainam.png" alt="DaiNam University Logo" width="200"/>
+<img src="https://www.aiotlab.vn/wp-content/uploads/2020/01/logo-aiotlab.png" alt="AIoTLab Logo" width="200"/>
+
+<br>
+
 [![CameraIP](https://img.shields.io/badge/Webcam-000000?style=for-the-badge)](https://www.logitech.com/en-us/products/webcams)
 [![MTCNN](https://img.shields.io/badge/MTCNN-00979D?style=for-the-badge)](https://github.com/ipazc/mtcnn)
 [![DeepFace](https://img.shields.io/badge/DeepFace-FF5722?style=for-the-badge)](https://github.com/serengil/deepface)
+
+</div>
+
 
 ### Phần mềm
 
