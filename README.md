@@ -1,12 +1,17 @@
 <h1 align="center">ỨNG DỤNG CÔNG NGHỆ TRONG HỆ THỐNG QUẢN LÝ VÀ ĐIỂM DANH SINH VIÊN</h1>
+<div align="center">
 
+<img src="https://dainam.edu.vn/wp-content/uploads/2020/01/logo-dainam.png" alt="DaiNam University Logo" width="200"/>
+<img src="https://www.aiotlab.vn/wp-content/uploads/2020/01/logo-aiotlab.png" alt="AIoTLab Logo" width="200"/>
 
-![DaiNam University Logo](https://dainam.edu.vn/wp-content/uploads/2020/01/logo-dainam.png)
-![AIoTLab Logo](https://www.aiotlab.vn/wp-content/uploads/2020/01/logo-aiotlab.png)
+<br>
 
 [![Made by AIoTLab](https://img.shields.io/badge/Made%20by%20AIoTLab-blue?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
 [![Fit DNU](https://img.shields.io/badge/Fit%20DNU-green?style=for-the-badge)](https://fitdnu.net/)
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-red?style=for-the-badge)](https://dainam.edu.vn)
+
+</div>
+
 
 ## Giới thiệu
 
