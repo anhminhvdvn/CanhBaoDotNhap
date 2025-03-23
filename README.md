@@ -20,13 +20,13 @@
 </div>
 
 
-## Giới thiệu
+## 🌟 Giới thiệu
 
 Hệ thống cảnh báo đột nhập sử dụng công nghệ nhận diện khuôn mặt và cơ sở dữ liệu db. Ứng dụng này cho phép người dùng dễ dàng bảo vệ an ninh của ngôi nhà, thực hiện nhận diện và báo động khi cần thiết.
 
 ---
 
-## Tính năng chính
+## 🌟 Tính năng chính
 
 - **Nhận diện tự động tự động:** Hệ thống sử dụng camera để quét khuôn mặt người và phát âm thanh khi khuôn mặt được nhận diện. Hệ thống sẽ báo âm thanh chào mừng nếu là người quen ngược lại phát báo động.
 - **Thông báo trực quan:** Khi nhận dạng được người có trong dữ liệu, hệ thống sẽ hiển thị thông tin trên giao diện người dùng. Nếu có trường hợp không nhận diện được khuôn mặt sẽ = người lạ sẽ được hiển thị.
@@ -37,13 +37,13 @@ Hệ thống cảnh báo đột nhập sử dụng công nghệ nhận diện kh
 
 ---
 
-## Hệ thống
+## 🏗️ HỆ THỐNG
 
 ![System Architecture](https://github.com/DuccHuyyy/Diem_Danh_Sinh_Vien_Bang_Guong_Mat_FaceNet/raw/main/system_architecture.png)
 
 ---
 
-## Cấu trúc dự án
+## 📂 Cấu trúc dự án
 BTL_IOT  
 ├── 📂 data_face            # File lưu ảnh nhận diện  
 │   ├── 🖼️ anh1.jpg        # Ảnh tạm lưu trong quá trình nhận diện  
@@ -62,10 +62,9 @@ BTL_IOT
 ├── 📄 nhan_dien.py         # File code nhận diện  
 ├── 📄 training.py          # File code training  
 
-
-## Công nghệ sử dụng
-
-### Phần cứng
+ 
+<h3 align="center">🛠️ CÔNG NGHỆ SỬ DỤNG</h1>
+### 📡 Phần cứng
 
 <div align="center"> 
 <br>
