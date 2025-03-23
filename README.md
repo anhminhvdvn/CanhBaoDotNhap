@@ -98,21 +98,21 @@ pip install flask opencv-contrib-python numpy pillow sqlite3
 ## 🧮 Hướng dẫn kết nối camera IP tới máy tính
 ### 🔌 Kết nối phần cứng:
 
-# ⛓️‍💥 Hướng Dẫn Kết Nối
+## ⛓️‍💥 Hướng Dẫn Kết Nối
 
-## 1️⃣ Cài Đặt Camera IP
+### 1️⃣ Cài Đặt Camera IP
 - Kết nối camera IP vào nguồn điện và vào mạng Wi-Fi.  
 - Sử dụng ứng dụng/phần mềm đi kèm để cấu hình SSID và mật khẩu Wi-Fi.  
 
-## 2️⃣ Lấy Địa Chỉ IP Của Camera
+### 2️⃣ Lấy Địa Chỉ IP Của Camera
 - Sau khi cấu hình, kiểm tra địa chỉ IP của camera (ví dụ: `http://192.168.1.100`).  
 - Đảm bảo có thể truy cập camera thông qua trình duyệt.  
 
-## 3️⃣ Kết Nối Camera Tới Máy Tính
+### 3️⃣ Kết Nối Camera Tới Máy Tính
 - Mở ứng dụng Python trên máy tính.  
 - Dùng địa chỉ IP lấy được để thiết lập kết nối với Flask.  
 
-## 4️⃣ Kiểm Tra Kết Nối Bằng OpenCV
+### 4️⃣ Kiểm Tra Kết Nối Bằng OpenCV
 Sử dụng đoạn code sau để kiểm tra kết nối:  
 
 ```python
@@ -139,93 +139,58 @@ cv2.destroyAllWindows()
 
 ---
 
-# 🚀 Hướng Dẫn Cài Đặt & Chạy
+## 🚀 Hướng Dẫn Cài Đặt & Chạy
 
-## 1️⃣ Chuẩn Bị Phần Mềm
-- **Cài đặt Node.js**: Tải và cài đặt từ trang chính thức.  
-- **Cài đặt Python 3**: Đảm bảo thêm Python vào PATH khi cài đặt.  
-- **Cài đặt SQL Server**: Dùng để lưu trữ thông tin sinh viên và điểm danh.  
+### 1️⃣ Chuẩn Bị Phần Mềm 
+- **Cài đặt Python 3**: Đảm bảo thêm Python vào PATH khi cài đặt.   
 
-## 2️⃣ Cài Đặt Thư Viện Cho React
+### 2️⃣ Cài Đặt Thư Viện
 ```bash
-mkdir attendance-app
-cd attendance-app
-npx create-react-app .
-npm install axios react-webcam
+pip install flask opencv-contrib-python numpy pillow sqlite3
 ```
 
-## 3️⃣ Cài Đặt Thư Viện Cho Flask
-```bash
-pip install flask flask-cors deepface mtcnn pyodbc opencv-python numpy
-```
+### 3️⃣ Chạy ứng dụng
+```bash 
+python giaodien.py
+```  
 
-## 4️⃣ Cấu Hình Cơ Sở Dữ Liệu
-- Tạo cơ sở dữ liệu `DiemdanhHS` trong SQL Server.  
-- Đảm bảo bảng dữ liệu phù hợp với mô hình ứng dụng.  
+## 📖 Hướng Dẫn Sử Dụng
 
-## 5️⃣ Chạy Ứng Dụng Flask API
-```bash
-cd path/to/flask-app
-python app.py
-```
-- Flask chạy trên `http://127.0.0.1:5000`.  
-
-## 6️⃣ Chạy Ứng Dụng React
-```bash
-cd attendance-app
-npm start
-```
-- Ứng dụng React chạy trên `http://localhost:3000`.  
-
-## 7️⃣ Sử Dụng Ứng Dụng
-- Truy cập `http://localhost:3000` trên trình duyệt.
-- Hệ thống sẽ tự động điểm danh bằng camera.
-
----
-
-# 📖 Hướng Dẫn Sử Dụng
-
-## 1️⃣ Điểm Danh Tự Động Qua Camera
-- Sinh viên sử dụng camera để chụp hình khuôn mặt.
-- Hệ thống gửi dữ liệu đến server Flask để xử lý.
+### 1️⃣ Thêm dữ liệu người quen trên giao diện
+- người dùng sử dụng camera để chụp hình khuôn mặt.
+- Hệ thống sẽ chụp 100 ảnh từ camera để lấy dữ liệu training.
 - Nếu nhận diện thành công, thông tin sẽ được lưu vào cơ sở dữ liệu.
 
-## 2️⃣ Quản Lý Sinh Viên
-- **Thêm/Sửa/Xóa** thông tin sinh viên.
-- **Tìm kiếm** danh sách sinh viên theo tên/lớp.
-- **Xem lịch sử** điểm danh.
-
-## 3️⃣ Xem Lịch Sử Điểm Danh
-- Hiển thị danh sách điểm danh gần đây.
-- Tìm kiếm lịch sử điểm danh theo ngày.
+### 2️⃣ Training dữ liệu
+- người dùng chọn nút Training trên giao diện sau khi đã lấy dữ liệu khuôn mặt để tự động thực hiện train dữ liệu
+  
+### 3️⃣ Bắt đầu nhận diện
+- Người dùng ấn vào nút nhận diện trên giao diện để bắt đầu chương trình nhận diện stream trực tiếp qua camera, liên tục nhận diện khi phát hiện khuôn mặt.
+- ảnh người lạ sẽ được lưu ở folder intruder.
 
 ---
 
-# ⚙️ Cấu Hình & Ghi Chú
-
-## Cấu Hình Cơ Sở Dữ Liệu
-- Cập nhật chuỗi kết nối SQL Server trong Flask (`get_db_connection()`).
-- Đảm bảo bảng `Users`, `Faces`, và `Attendance` tồn tại.
-
-## Cấu Hình Camera
+## ⚙️ Cấu Hình & Ghi Chú
+ 
+### Cấu Hình Camera
 - Kiểm tra kết nối và cấp quyền truy cập camera.
 - Có thể sử dụng webcam trên máy tính.
 
-## Cài Đặt Thư Viện Cần Thiết
+### Cài Đặt Thư Viện Cần Thiết
 ```bash
-pip install flask deepface mtcnn pyodbc opencv-python
-```
+pip install flask opencv-contrib-python numpy pillow sqlite3
+``` 
 
-## Hỗ Trợ CORS
-- Flask đã được cấu hình hỗ trợ CORS để React có thể gọi API.
-
-## Môi Trường Mạng
-- Các thiết bị điểm danh và server Flask cần nằm cùng mạng nội bộ.
-
-## Xử Lý Thông Báo & Lỗi
+### Xử Lý Thông Báo & Lỗi
 - Theo dõi console của server để kiểm tra thông báo lỗi.
 
 Với hướng dẫn này, bạn có thể sử dụng và cấu hình hệ thống điểm danh tự động dựa trên nhận diện khuôn mặt một cách hiệu quả. 🚀
 
+---
+## 📰 Poster
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anhminhvdvn/CanhBaoDotNhap/main/images/Poster_CNTT5_Aiot.pptx" width="150"> 
+</p>
 
 
