@@ -45,22 +45,23 @@ Hệ thống cảnh báo đột nhập sử dụng công nghệ nhận diện kh
 
 ## Cấu trúc dự án
 BTL_IOT  
-├── 📂 data_face &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# File lưu ảnh nhận diện
-│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
-│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
-├── 📂 intruders &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# File lưu ảnh người lạ
-│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
-│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
-├── 📂 trainer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file trainner
-│   ├── 📄 face-trainer.yaml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file trainer
-├── 📄 _alert.mp3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file âm thanh cảnh báo
-├── 📄 _hello.mp3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file âm thanh chào mừng
-├── 📄 FaceBase.db &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file dữ liệu database
-├── 📄 giaodien.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code giao diện
-├── 📄 KhuonMat.xml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file logic nhận diện
-├── 📄 lay-dulieu.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code lấy dữ liệu
-├── 📄 nhan-dien.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code nhận diện
-├── 📄 training.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code training
+├── 📂 data_face            # File lưu ảnh nhận diện  
+│   ├── 🖼️ anh1.jpg        # Ảnh tạm lưu trong quá trình nhận diện  
+│   ├── 🖼️ anh2.jpg        # Ảnh tạm lưu trong quá trình nhận diện  
+├── 📂 intruders            # File lưu ảnh người lạ  
+│   ├── 🖼️ anh1.jpg        # Ảnh tạm lưu trong quá trình nhận diện  
+│   ├── 🖼️ anh2.jpg        # Ảnh tạm lưu trong quá trình nhận diện  
+├── 📂 trainer              # File trainner  
+│   ├── 📄 face-trainer.yaml # File trainer  
+├── 📄 _alert.mp3           # File âm thanh cảnh báo  
+├── 📄 _hello.mp3           # File âm thanh chào mừng  
+├── 📄 FaceBase.db          # File dữ liệu database  
+├── 📄 giaodien.py          # File code giao diện  
+├── 📄 KhuonMat.xml         # File logic nhận diện  
+├── 📄 lay_dulieu.py        # File code lấy dữ liệu  
+├── 📄 nhan_dien.py         # File code nhận diện  
+├── 📄 training.py          # File code training  
+
 
 ## Công nghệ sử dụng
 
