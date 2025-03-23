@@ -31,31 +31,32 @@ Hệ thống quản lý và điểm danh sinh viên sử dụng công nghệ nh�
 ---
 
 ## Cấu trúc dự án
-BTL_IOT
-├── 📂 face-recognition-attendance   # Hệ thống điểm danh dựa trên nhận diện khuôn mặt
-│   ├── 📂 backend                   # Backend xử lý dữ liệu và logic
-│   │   ├── 📂 dataset               # Dữ liệu khuôn mặt của sinh viên
-│   │   │   ├── 📂 CNTT_16-05/       # Dữ liệu sinh viên CNTT - lớp 16-05
-│   │   │   ├── 📂 HAN_16-03/        # Dữ liệu sinh viên HAN - lớp 16-03
-│   │   ├── 📂 sound                 # Âm thanh thông báo điểm danh
-│   │   ├── 📄 app.py                # API backend chính
-│   │   ├── 🖼️ temp.jpg              # Ảnh tạm lưu trong quá trình nhận diện
-│   ├── 📂 frontend                  # Giao diện người dùng (React)
-│   │   ├── 📂 node_modules           # Thư viện phụ thuộc cho frontend
-│   │   ├── 📂 public                 # Tệp tĩnh của ứng dụng
-│   │   ├── 📂 src                    # Mã nguồn frontend
-│   │   │   ├── 📂 components         # Các component của React
-│   │   │   │   ├── 📄 DsDiemDanh.js  # Component hiển thị danh sách điểm danh
-│   │   │   │   ├── 📄 StudentList.js # Component hiển thị danh sách sinh viên
-│   │   │   │   ├── 📄 CameraComponent.js # Component xử lý camera
-│   │   │   │   ├── 📄 ManageStudents.js  # Component quản lý sinh viên
-│   │   │   ├── 📄 App.js             # Component chính của ứng dụng
-│   │   │   ├── 📄 index.js           # Điểm vào chính của ứng dụng React
-│   │   │   ├── 📄 setupTests.js      # Cấu hình kiểm thử
-│   ├── 📄 package.json               # Thông tin về các dependencies của frontend
-│   ├── 📄 package-lock.json          # Tệp khóa phiên bản cho các dependencies
-├── 📂 venv                            # Môi trường ảo Python
-├── 📄 package.json                    # Thông tin về các dependencies chung
+BTL_IOT  
+├── 📂 face-recognition-attendance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Hệ thống điểm danh dựa trên nhận diện khuôn mặt  
+│   ├── 📂 backend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Backend xử lý dữ liệu và logic  
+│   │   ├── 📂 dataset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Dữ liệu khuôn mặt của sinh viên  
+│   │   │   ├── 📂 CNTT_16-05/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Dữ liệu sinh viên CNTT - lớp 16-05  
+│   │   │   ├── 📂 HAN_16-03/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Dữ liệu sinh viên HAN - lớp 16-03  
+│   │   ├── 📂 sound &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Âm thanh thông báo điểm danh  
+│   │   ├── 📄 app.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# API backend chính  
+│   │   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
+│   ├── 📂 frontend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Giao diện người dùng (React)  
+│   │   ├── 📂 node_modules &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thư viện phụ thuộc cho frontend  
+│   │   ├── 📂 public &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Tệp tĩnh của ứng dụng  
+│   │   ├── 📂 src &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Mã nguồn frontend  
+│   │   │   ├── 📂 components &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Các component của React  
+│   │   │   │   ├── 📄 DsDiemDanh.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component hiển thị danh sách điểm danh  
+│   │   │   │   ├── 📄 StudentList.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component hiển thị danh sách sinh viên  
+│   │   │   │   ├── 📄 CameraComponent.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component xử lý camera  
+│   │   │   │   ├── 📄 ManageStudents.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component quản lý sinh viên  
+│   │   │   ├── 📄 App.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component chính của ứng dụng  
+│   │   │   ├── 📄 index.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Điểm vào chính của ứng dụng React  
+│   │   │   ├── 📄 setupTests.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Cấu hình kiểm thử  
+│   ├── 📄 package.json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thông tin về các dependencies của frontend  
+│   ├── 📄 package-lock.json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Tệp khóa phiên bản cho các dependencies  
+├── 📂 venv &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Môi trường ảo Python  
+├── 📄 package.json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thông tin về các dependencies chung  
+
 
 
 ## Công nghệ sử dụng
