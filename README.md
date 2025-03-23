@@ -2,8 +2,8 @@
 <div align="center">
 
 
-![Logo DaiNam](https://raw.githubusercontent.com/anhminhvdvn/CanhBaoDotNhap/main/images/logoDaiNam.png)
-![Logo AIoTLab](https://raw.githubusercontent.com/anhminhvdvn/CanhBaoDotNhap/main/images/LogoAIoTLab.png)
+![Logo DaiNam](https://raw.githubusercontent.com/anhminhvdvn/CanhBaoDotNhap/main/images/logoDaiNam.png)![Logo AIoTLab](https://raw.githubusercontent.com/anhminhvdvn/CanhBaoDotNhap/main/images/LogoAIoTLab.png)
+
 
 
 
