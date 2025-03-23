@@ -75,8 +75,11 @@ BTL_IOT
 
 </div>
 
+<h3 align="center">🖥️ Phần mềm</h1>
 
-### Phần mềm
+
+<div align="center"> 
+<br>
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)]()
 [![Flask](https://img.shields.io/badge/Flask-v2.0.1-black?style=for-the-badge&logo=flask)]()
@@ -84,3 +87,7 @@ BTL_IOT
 [![pyodbc](https://img.shields.io/badge/pyodbc-4.x-green?style=for-the-badge&logo=python)]()
 [![React](https://img.shields.io/badge/React-17.0.
 ::contentReference[oaicite:0]{index=0}
+
+</div>
+
+
