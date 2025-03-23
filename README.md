@@ -201,8 +201,8 @@ Dự án được phát triển bởi 4 thành viên:
 |---------------------------|------------|
 | **Phạm Ngọc Minh**        | Nhóm Trưởng, Triển khai dự án, Phát triển toàn bộ mã nguồn, thiết kế cơ sở dữ liệu, kiểm thử thuyết trình, Làm ReadMe, Hỗ trợ làm PowerPoint, hỗ trợ thực hiện video giới thiệu. |
 | **Phạm Quyết Thắng**      | Thiết kế slide PowerPoint, hỗ trợ thực hiện video giới thiệu, hỗ trợ bài tập lớn, biên soạn tài liệu Overleaf. |
-| **Nguyễn Văn Nam**        | Edit chỉnh sửa thực hiện làm Video, Thiết kế Poster, hỗ trợ bài tập lớn, biên soạn tài liệu Overleaf. |
-| **Hoàng Hải Quân**        | Biên soạn tài liệu Overleaf, hỗ trợ bài tập lớn. |
+| **Nguyễn Văn Nam**        | Edit chỉnh sửa thực hiện làm Video, Thiết kế Poster, biên soạn tài liệu Overleaf(bên soạn chính), hỗ trợ bài tập lớn, |
+| **Hoàng Hải Quân**        | hỗ trợ biên soạn tài liệu Overleaf, hỗ trợ bài tập lớn. |
 
 © 2025 NHÓM 6, CNTT16-05, TRƯỜNG ĐẠI HỌC ĐẠI NAM
 
