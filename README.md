@@ -1,4 +1,4 @@
-<h1 align="center">ỨNG DỤNG CÔNG NGHỆ TRONG HỆ THỐNG QUẢN LÝ VÀ ĐIỂM DANH SINH VIÊN</h1>
+<h1 align="center">ỨNG DỤNG CÔNG NGHỆ TRONG HỆ THỐNG CẢNH BÁO ĐỘT NHẬP</h1>
 <div align="center">
 
 
@@ -22,17 +22,17 @@
 
 ## Giới thiệu
 
-Hệ thống quản lý và điểm danh sinh viên sử dụng công nghệ nhận diện khuôn mặt và cơ sở dữ liệu SQL Server. Ứng dụng này cho phép giảng viên dễ dàng quản lý thông tin sinh viên, thực hiện điểm danh tự động và theo dõi lịch sử điểm danh qua giao diện người dùng thân thiện.
+Hệ thống cảnh báo đột nhập sử dụng công nghệ nhận diện khuôn mặt và cơ sở dữ liệu db. Ứng dụng này cho phép người dùng dễ dàng bảo vệ an ninh của ngôi nhà, thực hiện nhận diện và báo động khi cần thiết.
 
 ---
 
 ## Tính năng chính
 
-- **Điểm danh tự động:** Hệ thống sử dụng camera để quét khuôn mặt sinh viên và tự động điểm danh khi khuôn mặt được nhận diện. Hệ thống cho phép điểm danh ngay khi sinh viên ngồi trong lớp học.
-- **Thông báo trực quan:** Khi sinh viên được điểm danh, hệ thống sẽ hiển thị thông báo trên giao diện người dùng. Nếu có trường hợp không nhận diện được khuôn mặt, thông báo lỗi sẽ được hiển thị.
-- **Quản lý dữ liệu:** Dữ liệu điểm danh và thông tin sinh viên được lưu trữ trong SQL Server. Hệ thống cho phép xem danh sách sinh viên, danh sách lớp học, và lịch sử điểm danh.
-- **Giao diện thân thiện:** Sử dụng React cho giao diện người dùng với webcam để quét khuôn mặt, và Flask cho backend xử lý điểm danh cũng như lưu dữ liệu. Giao diện người dùng được thiết kế đơn giản và dễ sử dụng.
-- **Phát hiện khuôn mặt:** Sử dụng thư viện MTCNN để phát hiện khuôn mặt và DeepFace để xác thực các khuôn mặt so với cơ sở dữ liệu đã lưu trữ.
+- **Nhận diện tự động tự động:** Hệ thống sử dụng camera để quét khuôn mặt người và phát âm thanh khi khuôn mặt được nhận diện. Hệ thống sẽ báo âm thanh chào mừng nếu là người quen ngược lại phát báo động.
+- **Thông báo trực quan:** Khi nhận dạng được người có trong dữ liệu, hệ thống sẽ hiển thị thông tin trên giao diện người dùng. Nếu có trường hợp không nhận diện được khuôn mặt sẽ = người lạ sẽ được hiển thị.
+- **Quản lý dữ liệu:** Dữ liệu nhận diện và thông tin người quen được lưu trữ trong SQL Server.
+- **Giao diện thân thiện:** Sử dụng Python tkinter cho giao diện người dùng với webcam để quét khuôn mặt, xử lý nhận dạng cũng như lưu dữ liệu. Giao diện người dùng được thiết kế đơn giản và dễ sử dụng.
+- **Phát hiện khuôn mặt:** Sử dụng thư viện BDPH để phát hiện khuôn mặt và cv2 để xác thực các khuôn mặt so với cơ sở dữ liệu đã lưu trữ.
 - **Cải thiện hình ảnh:** Hệ thống cải thiện chất lượng hình ảnh trước khi xác thực bằng các kỹ thuật như tăng độ nét và điều chỉnh độ sáng.
 
 ---
@@ -45,42 +45,28 @@ Hệ thống quản lý và điểm danh sinh viên sử dụng công nghệ nh�
 
 ## Cấu trúc dự án
 BTL_IOT  
-├── 📂 face-recognition-attendance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Hệ thống điểm danh dựa trên nhận diện khuôn mặt  
-│   ├── 📂 backend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Backend xử lý dữ liệu và logic  
-│   │   ├── 📂 dataset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Dữ liệu khuôn mặt của sinh viên  
-│   │   │   ├── 📂 CNTT_16-05/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Dữ liệu sinh viên CNTT - lớp 16-05  
-│   │   │   ├── 📂 HAN_16-03/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Dữ liệu sinh viên HAN - lớp 16-03  
-│   │   ├── 📂 sound &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Âm thanh thông báo điểm danh  
-│   │   ├── 📄 app.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# API backend chính  
-│   │   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
-│   ├── 📂 frontend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Giao diện người dùng (React)  
-│   │   ├── 📂 node_modules &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thư viện phụ thuộc cho frontend  
-│   │   ├── 📂 public &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Tệp tĩnh của ứng dụng  
-│   │   ├── 📂 src &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Mã nguồn frontend  
-│   │   │   ├── 📂 components &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Các component của React  
-│   │   │   │   ├── 📄 DsDiemDanh.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component hiển thị danh sách điểm danh  
-│   │   │   │   ├── 📄 StudentList.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component hiển thị danh sách sinh viên  
-│   │   │   │   ├── 📄 CameraComponent.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component xử lý camera  
-│   │   │   │   ├── 📄 ManageStudents.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component quản lý sinh viên  
-│   │   │   ├── 📄 App.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Component chính của ứng dụng  
-│   │   │   ├── 📄 index.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Điểm vào chính của ứng dụng React  
-│   │   │   ├── 📄 setupTests.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Cấu hình kiểm thử  
-│   ├── 📄 package.json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thông tin về các dependencies của frontend  
-│   ├── 📄 package-lock.json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Tệp khóa phiên bản cho các dependencies  
-├── 📂 venv &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Môi trường ảo Python  
-├── 📄 package.json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thông tin về các dependencies chung  
-
-
+├── 📂 data_face &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# File lưu ảnh nhận diện
+│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
+│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
+├── 📂 intruders &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# File lưu ảnh người lạ
+│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
+│   ├── 🖼️ temp.jpg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ảnh tạm lưu trong quá trình nhận diện  
+├── 📂 trainer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file trainner
+│   ├── 📄 face-trainer.yaml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file trainer
+├── 📄 _alert.mp3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file âm thanh cảnh báo
+├── 📄 _hello.mp3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file âm thanh chào mừng
+├── 📄 FaceBase.db &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file dữ liệu database
+├── 📄 giaodien.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code giao diện
+├── 📄 KhuonMat.xml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file logic nhận diện
+├── 📄 lay-dulieu.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code lấy dữ liệu
+├── 📄 nhan-dien.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code nhận diện
+├── 📄 training.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# file code training
 
 ## Công nghệ sử dụng
 
 ### Phần cứng
 
-<div align="center">
-
-<img src="https://dainam.edu.vn/wp-content/uploads/2020/01/logo-dainam.png" alt="DaiNam University Logo" width="200"/>
-<img src="https://www.aiotlab.vn/wp-content/uploads/2020/01/logo-aiotlab.png" alt="AIoTLab Logo" width="200"/>
-
+<div align="center"> 
 <br>
 
 [![CameraIP](https://img.shields.io/badge/Webcam-000000?style=for-the-badge)](https://www.logitech.com/en-us/products/webcams)
